@@ -1,5 +1,7 @@
 # Today I Learned
 
+A collection of TILs heavily inspired from [jbranchaud](https://github.com/jbranchaud/til).
+
 ## 14/03/2016 - CSS3 ch unit of measurement
 
 This can be invaluable if you are trying to express the width of an element as a multiple of the character width.
