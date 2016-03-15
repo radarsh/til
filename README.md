@@ -31,6 +31,20 @@ The above will render both the `p` and the `div.drawer` elements at equal widths
 
 What's more, the browser support for this is remarkably good too.
 
+## 10/03/2016 - JavaScript input event
+
+This is a robust way to handle changes to values of `input` and `textarea` elements. Browser support is excellent too. 
+
+Example:
+
+```javascript
+$("input.class-name").on("input", function(e) {
+    console.log("Value: ", $(this).val());
+});
+```
+
+Before finding out about this, I was using the `keyup`, `keydown` and `keypress` events but each one comes with its own set of limitations. For instance, the `keyup` and `keydown` events don't filter out special keys such as `Ctrl` and `Alt`. The `keypress` isn't even a standard event and it gets tricky if you want to grab the value of a field after the key has been pressed.
+
 ## 26/02/2016 - Gradle offline mode
 
 Extremely handy when you have to execute a Gradle task without connecting to the internet or remote repositories in situations such as when you're in a coffee shop or have no access to the network but have already downloaded all the dependencies. 
