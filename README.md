@@ -4,7 +4,7 @@ A collection of TILs heavily inspired from [jbranchaud](https://github.com/jbran
 
 ## 7/11/2016 - Bash readline arguments
 
-I discovered this one by accident. Simply open Bash and type <kbd>Alt + <digit></kbd> followed by any character and you'll find the character repeated `digit` times on your prompt.
+I discovered this one by accident. Simply open Bash and type <kbd>Alt + `digit`</kbd> followed by any character and you'll find the character repeated `digit` times on your prompt.
 
 More about this at http://stackoverflow.com/questions/562115/press-alt-numeric-in-bash-and-you-get-arg-numeric-what-is-that
 
