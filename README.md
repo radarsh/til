@@ -2,6 +2,24 @@
 
 A collection of TILs heavily inspired from [jbranchaud](https://github.com/jbranchaud/til).
 
+## 20/07/2017 - IntelliJ Gradle dependency pasting
+
+If you are looking to convert a Maven style dependency into Gradle style for use in your `build.gradle`, look no further. All you have to do copy something that looks like the below.
+
+```xml
+<dependency>
+  <groupId>net.logstash.logback</groupId>
+  <artifactId>logstash-logback-encoder</artifactId>
+  <version>4.11</version>
+</dependency>
+```
+
+When you past it inside the `dependencies` block of your `build.gradle`, it gets automatically converted to the below format by intelligent IntelliJ.
+
+```
+compile 'net.logstash.logback:logstash-logback-encoder:4.11'
+```
+
 ## 7/11/2016 - Bash readline arguments
 
 I discovered this one by accident. Simply open Bash and type <kbd>Alt + `digit`</kbd> followed by any character and you'll find the character repeated `digit` times on your prompt.
