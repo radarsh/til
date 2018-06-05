@@ -2,6 +2,10 @@
 
 A collection of TILs heavily inspired from [jbranchaud](https://github.com/jbranchaud/til).
 
+## 5/6/2018 - IntelliJ constructor breakpoint
+
+In IntelliJ, while debugging a Java application you can set breakpoints on constructors to track creation of objects. However, what would you do if the class doesn't declare any constructors (has only the implicit default constructor)? Just set a line breakpoint on the class declaration line `public class MyClass {` and it will be hit whenever an instance of this class is created.
+
 ## 20/07/2017 - IntelliJ Gradle dependency pasting
 
 If you are looking to convert a Maven style dependency into Gradle style for use in your `build.gradle`, look no further. All you have to do copy something that looks like the below.
